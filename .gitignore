@@ -1,9 +1,21 @@
 **/dist-newstyle
 **/.stack-work
-**/.classpath 
+**/.classpath
 **/.project
 **/.settings
 **/target
 **/obj
 *.lock
+
+# Build artefacts across lab languages
+*.class
+*.ali
+*.o
+*.hi
+
+# Alire / Ada one-off scaffolds and downloads under lab3-num/ada/
+lab3-num/ada/alr.zip
+lab3-num/ada/LICENSE.txt
+lab3-num/ada/hello/
+lab3-num/ada/overflow
 
