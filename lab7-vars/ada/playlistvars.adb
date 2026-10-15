@@ -93,9 +93,9 @@ begin
         item := playlist1(i);
         case item.all.item_variant is
         when PIECE =>
-            length1 := length1 + item.all.piece_length_secs; -- TASK 7.5: fix compiler error
+            length1 := length1 + Float(item.all.piece_length_secs); -- TASK 7.5 fix: Piece_Length_Type is a distinct type (line 20) and must be explicitly converted to Float before being added to length1 (line 81).
         when ADVERT =>
-            length1 := length1 + item.all.ad_length_secs; -- TASK 7.5: fix compiler error
+            length1 := length1 + Float(item.all.ad_length_secs); -- TASK 7.5 fix: Advert_Length_Type is a distinct type (line 21) and must be explicitly converted to Float before being added to length1 (line 81).
         end case;
     end loop;
 
